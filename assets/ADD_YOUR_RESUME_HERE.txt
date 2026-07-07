@@ -1,2 +1,0 @@
-Place your resume PDF in this folder and rename it to: resume.pdf
-The nav bar and hero "./download-resume.pdf" buttons already link to assets/resume.pdf
