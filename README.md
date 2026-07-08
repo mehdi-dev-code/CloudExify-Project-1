@@ -8,8 +8,8 @@
 - Scroll-triggered ASCII-style skill bars (animate once, on scroll into view)
 - Live project tech-tag filter (bonus, from Project 2's mechanic list — added for extra polish)
 
-**GitHub Repository:** `CloudExify-Project-1` (must be **public**)
-**Live Vercel Link:** _[add after deployment — see steps below]_
+**GitHub Repository:** `CloudExify-Project-1` (**public**)
+**Live Vercel Link:** cloud-exify-project-1-ds2lxdws4-githabsimples-projects.vercel.app
 **Submission Deadline:** 15 July
 
 ---
