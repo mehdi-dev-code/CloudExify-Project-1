@@ -1,7 +1,7 @@
 # Personal Portfolio Website — CloudExify Web Dev Month 1, Project 1
 
 **Name:** Mehdi Ali
-**Registration Number:** _[add your CloudExify registration number here]_
+**Registration Number:** CX-INT-2026-GEN-0163
 **Build Track Chosen:** Terminal Coder
 **Signature Feature(s) Implemented:**
 - Boot-sequence + typewriter hero intro (typed role lines, looping)
