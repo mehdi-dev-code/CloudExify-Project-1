@@ -30,11 +30,6 @@ portfolio/
 └── README.md
 ```
 
-## Before You Deploy
-1. Add your real resume as `assets/resume.pdf` (the download button in the nav and hero already points to this path).
-2. Update the registration number above.
-3. Optionally swap in a real GitHub link per-project if you split repos later (currently all point to your GitHub profile).
-
 ## Deploying
 1. Create a **public** GitHub repo named exactly `CloudExify-Project-1`.
 2. Push this folder's contents to it.
@@ -44,6 +39,12 @@ portfolio/
 6. Click **Deploy**. You'll get a live link like `mehdi-ali-portfolio.vercel.app`.
 7. Test the live link (not localhost) before submitting.
 8. Fill in this README (already done) as your report — it stays in the repo as required.
+
+
+<!-- ## Before You Deploy
+1. Add your real resume as `assets/resume.pdf` (the download button in the nav and hero already points to this path).
+2. Update the registration number above.
+3. Optionally swap in a real GitHub link per-project if you split repos later (currently all point to your GitHub profile). -->
 
 <!-- ## Testing Checklist
 - [ ] Live Vercel link loads correctly (not localhost)
