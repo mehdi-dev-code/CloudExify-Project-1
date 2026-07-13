@@ -45,7 +45,7 @@ portfolio/
 7. Test the live link (not localhost) before submitting.
 8. Fill in this README (already done) as your report — it stays in the repo as required.
 
-## Testing Checklist
+<!-- ## Testing Checklist
 - [ ] Live Vercel link loads correctly (not localhost)
 - [ ] Hamburger menu opens/closes correctly on mobile width
 - [ ] Boot sequence + typewriter hero plays on load
@@ -54,7 +54,7 @@ portfolio/
 - [ ] Contact form shows validation errors on empty/invalid input, success message on valid submit
 - [ ] All nav/footer/social links work, no 404s
 - [ ] Layout tested on mobile + desktop widths
-- [ ] No console errors on load
+- [ ] No console errors on load -->
 
-## Submission
-Wait for the official submission form in the group (posted after 15 July) and paste your GitHub repo link + details there. Do not remove or make the repo private after submitting.
+<!-- ## Submission
+Wait for the official submission form in the group (posted after 15 July) and paste your GitHub repo link + details there. Do not remove or make the repo private after submitting. -->
