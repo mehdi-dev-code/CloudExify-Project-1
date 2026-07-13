@@ -1,288 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mehdi Ali | Full Stack MERN Developer</title>
-<meta name="description" content="Mehdi Ali — Full Stack MERN Developer based in Lahore, Pakistan. Building AI-integrated web applications.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehdi Ali | Full Stack MERN Developer</title>
+  <meta name="description"
+    content="Mehdi Ali — Full Stack MERN Developer based in Lahore, Pakistan. Building AI-integrated web applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ===== TAB BAR / NAV ===== -->
-<header class="tabbar" id="tabbar">
-  <div class="tabbar-inner">
-    <div class="tabbar-left">
-      <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i class="dot dot-g"></i></span>
-      <span class="tabbar-path">mehdi@portfolio<span class="dim">:</span><span class="accent">~</span><span class="caret-mini">$</span></span>
+  <!-- ===== TAB BAR / NAV ===== -->
+  <header class="tabbar" id="tabbar">
+    <div class="tabbar-inner">
+      <div class="tabbar-left">
+        <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i
+            class="dot dot-g"></i></span>
+        <span class="tabbar-path">mehdi@portfolio<span class="dim">:</span><span class="accent">~</span><span
+            class="caret-mini">$</span></span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span>[</span><span id="hamburgerIcon">≡</span><span>]</span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-cmd="cd">./about</a>
+        <a href="#skills" data-cmd="cd">./skills</a>
+        <a href="#projects" data-cmd="cd">./projects</a>
+        <a href="#contact" data-cmd="cd">./contact</a>
+        <a class="nav-resume" href="assets/resume.pdf" download>./resume.pdf</a>
+      </nav>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span>[</span><span id="hamburgerIcon">≡</span><span>]</span>
-    </button>
-    <nav class="nav-links" id="navLinks">
-      <a href="#about" data-cmd="cd">./about</a>
-      <a href="#skills" data-cmd="cd">./skills</a>
-      <a href="#projects" data-cmd="cd">./projects</a>
-      <a href="#contact" data-cmd="cd">./contact</a>
-      <a class="nav-resume" href="assets/resume.pdf" download>./resume.pdf</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main id="main">
+  <main id="main">
 
-  <!-- ===== HERO ===== -->
-  <section id="hero" class="pane hero">
-    <div class="pane-window">
-      <div class="pane-titlebar">
-        <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i class="dot dot-g"></i></span>
-        <span class="pane-title">mehdi@portfolio: ~/boot</span>
-      </div>
-      <div class="pane-body hero-body">
-        <div class="boot-log" id="bootLog" aria-live="polite"></div>
-
-        <div class="hero-prompt-line">
-          <span class="prompt">mehdi@portfolio</span><span class="dim">:~$</span>
-          <span class="hero-cmd">whoami</span>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="pane hero">
+      <div class="pane-window">
+        <div class="pane-titlebar">
+          <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i
+              class="dot dot-g"></i></span>
+          <span class="pane-title">mehdi@portfolio: ~/boot</span>
         </div>
+        <div class="pane-body hero-body">
+          <div class="boot-log" id="bootLog" aria-live="polite"></div>
 
-        <h1 class="hero-name">Mehdi Ali</h1>
-
-        <p class="hero-role">
-          <span id="typedText"></span><span class="cursor" aria-hidden="true">▌</span>
-        </p>
-
-        <p class="hero-sub">Lahore, Pakistan · Full Stack (MERN) Developer · AI-integrated builds</p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">./view-projects</a>
-          <a href="assets/resume.pdf" class="btn btn-outline" download>./download-resume.pdf</a>
-          <a href="#contact" class="btn btn-ghost">./get-in-touch</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="pane">
-    <div class="pane-window">
-      <div class="pane-titlebar">
-        <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i class="dot dot-g"></i></span>
-        <span class="pane-title">mehdi@portfolio: ~/about.md</span>
-      </div>
-      <div class="pane-body">
-        <p class="cmd-line"><span class="prompt-sm">$</span> cat about.md</p>
-        <div class="about-content">
-          <p>
-            I'm a Junior Full Stack Developer working across the MERN stack — MongoDB, Express,
-            React, and Node.js — with a growing focus on AI-integrated applications. I hold a
-            <strong>BS in Applied Information Technology (CGPA 3.32)</strong> from
-            The Islamia University of Bahawalpur, where my final year project,
-            <strong>ChatterBox</strong>, was a real-time chat application built with Socket.io.
-          </p>
-          <p>
-            My hands-on experience includes an internship at <strong>Enigmatix</strong> and a
-            part-time Admin/HR role at <strong>Cynosure Accounting LLC</strong>, alongside a
-            self-built portfolio of production-deployed projects — from a full e-commerce
-            platform with Stripe payments to a Retrieval-Augmented Generation system using
-            LangChain and Google Gemini.
-          </p>
-          <p>
-            I'm currently based in <strong>Lahore, Pakistan</strong>, actively looking for
-            junior full-stack and AI-assisted developer roles where I can keep shipping real,
-            deployed work — not just tutorials.
-          </p>
-        </div>
-        <div class="about-meta">
-          <div class="meta-row"><span class="meta-key">location</span><span class="meta-val">Lahore, Pakistan</span></div>
-          <div class="meta-row"><span class="meta-key">education</span><span class="meta-val">BS APD Information Technology — IUB (CGPA 3.32)</span></div>
-          <div class="meta-row"><span class="meta-key">focus</span><span class="meta-val">MERN Stack + AI Integration</span></div>
-          <div class="meta-row"><span class="meta-key">status</span><span class="meta-val status-open"><i class="status-dot"></i>Open to work</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="pane">
-    <div class="pane-window">
-      <div class="pane-titlebar">
-        <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i class="dot dot-g"></i></span>
-        <span class="pane-title">mehdi@portfolio: ~/skills.sh</span>
-      </div>
-      <div class="pane-body">
-        <p class="cmd-line"><span class="prompt-sm">$</span> ./skills.sh --scan</p>
-        <div class="skills-grid">
-
-          <div class="skill-group">
-            <p class="skill-group-title">// frontend</p>
-            <div class="skill" data-percent="85"><div class="skill-row"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-pct">85%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="82"><div class="skill-row"><span class="skill-name">React</span><span class="skill-pct">82%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="88"><div class="skill-row"><span class="skill-name">HTML5 / CSS3</span><span class="skill-pct">88%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="70"><div class="skill-row"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">70%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
+          <div class="hero-prompt-line">
+            <span class="prompt">mehdi@portfolio</span><span class="dim">:~$</span>
+            <span class="hero-cmd">whoami</span>
           </div>
 
-          <div class="skill-group">
-            <p class="skill-group-title">// backend</p>
-            <div class="skill" data-percent="80"><div class="skill-row"><span class="skill-name">Node.js / Express</span><span class="skill-pct">80%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="78"><div class="skill-row"><span class="skill-name">MongoDB</span><span class="skill-pct">78%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="75"><div class="skill-row"><span class="skill-name">JWT / Auth &amp; RBAC</span><span class="skill-pct">75%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="65"><div class="skill-row"><span class="skill-name">Socket.io</span><span class="skill-pct">65%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
+          <h1 class="hero-name">Mehdi Ali</h1>
+
+          <p class="hero-role">
+            <span id="typedText"></span><span class="cursor" aria-hidden="true">▌</span>
+          </p>
+
+          <p class="hero-sub">Lahore, Pakistan · Full Stack (MERN) Developer · AI-integrated builds</p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">./view-projects</a>
+            <a href="assets/resume.pdf" class="btn btn-outline" download>./download-resume.pdf</a>
+            <a href="#contact" class="btn btn-ghost">./get-in-touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="pane">
+      <div class="pane-window">
+        <div class="pane-titlebar">
+          <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i
+              class="dot dot-g"></i></span>
+          <span class="pane-title">mehdi@portfolio: ~/about.md</span>
+        </div>
+        <div class="pane-body">
+          <p class="cmd-line"><span class="prompt-sm">$</span> cat about.md</p>
+          <div class="about-content">
+            <p>
+              I'm a Junior Full Stack Developer working across the MERN stack — MongoDB, Express,
+              React, and Node.js — with a growing focus on AI-integrated applications. I hold a
+              <strong>BS in Information Technology (CGPA 3.32)</strong> from
+              The Islamia University of Bahawalpur, where my final year project,
+              <strong>ChatterBox</strong>, was a real-time chat application built with Socket.io.
+            </p>
+            <p>
+              My hands-on experience includes an internship at <strong>Enigmatix</strong> and a
+              part-time Admin/HR role at <strong>BitcraftX</strong>, alongside a
+              self-built portfolio of production-deployed projects — from a full e-commerce
+              platform with Stripe payments to a Retrieval-Augmented Generation system using
+              LangChain and Google Gemini.
+            </p>
+            <p>
+              I'm currently based in <strong>Lahore, Pakistan</strong>, actively looking for
+              junior full-stack and AI-assisted developer roles where I can keep shipping real,
+              deployed work — not just tutorials.
+            </p>
+          </div>
+          <div class="about-meta">
+            <div class="meta-row"><span class="meta-key">location</span><span class="meta-val">Lahore, Pakistan</span>
+            </div>
+            <div class="meta-row"><span class="meta-key">education</span><span class="meta-val">BS Information
+                Technology — IUB (CGPA 3.32)</span></div>
+            <div class="meta-row"><span class="meta-key">focus</span><span class="meta-val">MERN Stack + AI
+                Integration</span></div>
+            <div class="meta-row"><span class="meta-key">status</span><span class="meta-val status-open"><i
+                  class="status-dot"></i>Open to work</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="pane">
+      <div class="pane-window">
+        <div class="pane-titlebar">
+          <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i
+              class="dot dot-g"></i></span>
+          <span class="pane-title">mehdi@portfolio: ~/skills.sh</span>
+        </div>
+        <div class="pane-body">
+          <p class="cmd-line"><span class="prompt-sm">$</span> ./skills.sh --scan</p>
+          <div class="skills-grid">
+
+            <div class="skill-group">
+              <p class="skill-group-title">// frontend</p>
+              <div class="skill" data-percent="85">
+                <div class="skill-row"><span class="skill-name">JavaScript (ES6+)</span><span
+                    class="skill-pct">85%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="82">
+                <div class="skill-row"><span class="skill-name">React</span><span class="skill-pct">82%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="88">
+                <div class="skill-row"><span class="skill-name">HTML5 / CSS3</span><span class="skill-pct">88%</span>
+                </div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="70">
+                <div class="skill-row"><span class="skill-name">Tailwind CSS</span><span class="skill-pct">70%</span>
+                </div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-title">// backend</p>
+              <div class="skill" data-percent="80">
+                <div class="skill-row"><span class="skill-name">Node.js / Express</span><span
+                    class="skill-pct">80%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="78">
+                <div class="skill-row"><span class="skill-name">MongoDB</span><span class="skill-pct">78%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="75">
+                <div class="skill-row"><span class="skill-name">JWT / Auth &amp; RBAC</span><span
+                    class="skill-pct">75%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="65">
+                <div class="skill-row"><span class="skill-name">Socket.io</span><span class="skill-pct">65%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <p class="skill-group-title">// ai / tools</p>
+              <div class="skill" data-percent="72">
+                <div class="skill-row"><span class="skill-name">Python (AI/ML)</span><span class="skill-pct">72%</span>
+                </div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="68">
+                <div class="skill-row"><span class="skill-name">LangChain / Gemini API</span><span
+                    class="skill-pct">68%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="80">
+                <div class="skill-row"><span class="skill-name">Git / GitHub</span><span class="skill-pct">80%</span>
+                </div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+              <div class="skill" data-percent="60">
+                <div class="skill-row"><span class="skill-name">Docker (learning)</span><span
+                    class="skill-pct">60%</span></div>
+                <div class="ascii-bar"><span class="bar-fill"></span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="pane">
+      <div class="pane-window">
+        <div class="pane-titlebar">
+          <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i
+              class="dot dot-g"></i></span>
+          <span class="pane-title">mehdi@portfolio: ~/projects</span>
+        </div>
+        <div class="pane-body">
+          <p class="cmd-line"><span class="prompt-sm">$</span> ls ./projects --filter</p>
+
+          <div class="filter-row" role="group" aria-label="Filter projects by technology">
+            <button class="filter-btn active" data-filter="all">all</button>
+            <button class="filter-btn" data-filter="react">react</button>
+            <button class="filter-btn" data-filter="node">node</button>
+            <button class="filter-btn" data-filter="ai">ai</button>
+            <button class="filter-btn" data-filter="realtime">realtime</button>
           </div>
 
-          <div class="skill-group">
-            <p class="skill-group-title">// ai / tools</p>
-            <div class="skill" data-percent="72"><div class="skill-row"><span class="skill-name">Python (AI/ML)</span><span class="skill-pct">72%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="68"><div class="skill-row"><span class="skill-name">LangChain / Gemini API</span><span class="skill-pct">68%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="80"><div class="skill-row"><span class="skill-name">Git / GitHub</span><span class="skill-pct">80%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
-            <div class="skill" data-percent="60"><div class="skill-row"><span class="skill-name">Docker (learning)</span><span class="skill-pct">60%</span></div><div class="ascii-bar"><span class="bar-fill"></span></div></div>
+          <div class="project-grid" id="projectGrid">
+
+            <article class="project-card" data-tags="react,node,mongodb">
+              <div class="project-card-head">
+                <span class="folder-icon">▸</span>
+                <h3>ShopWave</h3>
+              </div>
+              <p class="project-desc">Full-stack MERN e-commerce platform with Stripe checkout, JWT auth, role-based
+                access control, Cloudinary media uploads, and 20+ REST endpoints.</p>
+              <div class="tag-row">
+                <span class="tag">react</span><span class="tag">node</span><span class="tag">mongodb</span><span
+                  class="tag">stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="https://shopwave-frontend-jade.vercel.app" target="_blank" rel="noopener">live ↗</a>
+                <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="react,node,realtime">
+              <div class="project-card-head">
+                <span class="folder-icon">▸</span>
+                <h3>ChatterBox</h3>
+              </div>
+              <p class="project-desc">Real-time chat application built with Socket.io, Zustand, and Tailwind CSS. Final
+                Year Project at IUB, submitted with a full SRS document.</p>
+              <div class="tag-row">
+                <span class="tag">react</span><span class="tag">socket.io</span><span class="tag">zustand</span>
+              </div>
+              <div class="project-links">
+                <a href="https://chatter-box-ten-omega.vercel.app" target="_blank" rel="noopener">live ↗</a>
+                <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="ai,node,realtime">
+              <div class="project-card-head">
+                <span class="folder-icon">▸</span>
+                <h3>AI Interview &amp; Career Prep Platform</h3>
+              </div>
+              <p class="project-desc">Self-built platform using the Gemini API for AI-driven interviews, Multer-based
+                PDF resume analysis, and a real-time Socket.io interview engine.</p>
+              <div class="tag-row">
+                <span class="tag">gemini api</span><span class="tag">socket.io</span><span class="tag">node</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-tags="ai">
+              <div class="project-card-head">
+                <span class="folder-icon">▸</span>
+                <h3>Medical RAG System</h3>
+              </div>
+              <p class="project-desc">Retrieval-Augmented Generation system using LangChain, Google Gemini API,
+                HuggingFace sentence-transformers, and FAISS for medical Q&amp;A.</p>
+              <div class="tag-row">
+                <span class="tag">python</span><span class="tag">langchain</span><span class="tag">faiss</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
+              </div>
+            </article>
+
+          </div>
+          <p class="empty-state" id="emptyState" hidden>// no projects match this filter</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="pane">
+      <div class="pane-window">
+        <div class="pane-titlebar">
+          <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i
+              class="dot dot-g"></i></span>
+          <span class="pane-title">mehdi@portfolio: ~/contact.sh</span>
+        </div>
+        <div class="pane-body">
+          <p class="cmd-line"><span class="prompt-sm">$</span> cat contact.txt</p>
+          <div class="contact-info">
+            <a href="mailto:mehdi035559@gmail.com" class="contact-line"><span class="meta-key">email</span><span
+                class="meta-val">mehdi035559@gmail.com</span></a>
+            <a href="tel:+923127627983" class="contact-line"><span class="meta-key">phone</span><span
+                class="meta-val">+92 312 7627983</span></a>
+            <a href="https://www.linkedin.com/in/mehdi-ali-a33881296/" target="_blank" rel="noopener"
+              class="contact-line"><span class="meta-key">linkedin</span><span class="meta-val">/in/mehdi-ali-a33881296
+                ↗</span></a>
+            <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener" class="contact-line"><span
+                class="meta-key">github</span><span class="meta-val">/mehdi-dev-code ↗</span></a>
           </div>
 
+          <p class="cmd-line cmd-line-spaced"><span class="prompt-sm">$</span> ./send-message.sh</p>
+          <form id="contactForm" class="terminal-form" novalidate>
+            <label class="form-row">
+              <span class="form-label">--name</span>
+              <input type="text" id="name" name="name" placeholder="type your name" autocomplete="name">
+            </label>
+            <label class="form-row">
+              <span class="form-label">--email</span>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+            </label>
+            <label class="form-row form-row-textarea">
+              <span class="form-label">--message</span>
+              <textarea id="message" name="message" rows="4" placeholder="type your message"></textarea>
+            </label>
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <p class="form-success" id="formSuccess" role="status" hidden>&gt; message queued. I'll get back to you
+              soon.</p>
+            <button type="submit" class="btn btn-primary">./submit</button>
+          </form>
         </div>
       </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="dim">mehdi@portfolio</span><span class="dim">:~$</span> <span class="accent">echo</span> "&copy;
+      <span id="year"></span> Mehdi Ali — built with HTML, CSS &amp; vanilla JS"
     </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="pane">
-    <div class="pane-window">
-      <div class="pane-titlebar">
-        <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i class="dot dot-g"></i></span>
-        <span class="pane-title">mehdi@portfolio: ~/projects</span>
-      </div>
-      <div class="pane-body">
-        <p class="cmd-line"><span class="prompt-sm">$</span> ls ./projects --filter</p>
-
-        <div class="filter-row" role="group" aria-label="Filter projects by technology">
-          <button class="filter-btn active" data-filter="all">all</button>
-          <button class="filter-btn" data-filter="react">react</button>
-          <button class="filter-btn" data-filter="node">node</button>
-          <button class="filter-btn" data-filter="ai">ai</button>
-          <button class="filter-btn" data-filter="realtime">realtime</button>
-        </div>
-
-        <div class="project-grid" id="projectGrid">
-
-          <article class="project-card" data-tags="react,node,mongodb">
-            <div class="project-card-head">
-              <span class="folder-icon">▸</span>
-              <h3>ShopWave</h3>
-            </div>
-            <p class="project-desc">Full-stack MERN e-commerce platform with Stripe checkout, JWT auth, role-based access control, Cloudinary media uploads, and 20+ REST endpoints.</p>
-            <div class="tag-row">
-              <span class="tag">react</span><span class="tag">node</span><span class="tag">mongodb</span><span class="tag">stripe</span>
-            </div>
-            <div class="project-links">
-              <a href="https://shopwave-frontend-jade.vercel.app" target="_blank" rel="noopener">live ↗</a>
-              <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="react,node,realtime">
-            <div class="project-card-head">
-              <span class="folder-icon">▸</span>
-              <h3>ChatterBox</h3>
-            </div>
-            <p class="project-desc">Real-time chat application built with Socket.io, Zustand, and Tailwind CSS. Final Year Project at IUB, submitted with a full SRS document.</p>
-            <div class="tag-row">
-              <span class="tag">react</span><span class="tag">socket.io</span><span class="tag">zustand</span>
-            </div>
-            <div class="project-links">
-              <a href="https://chatter-box-ten-omega.vercel.app" target="_blank" rel="noopener">live ↗</a>
-              <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="ai,node,realtime">
-            <div class="project-card-head">
-              <span class="folder-icon">▸</span>
-              <h3>AI Interview &amp; Career Prep Platform</h3>
-            </div>
-            <p class="project-desc">Self-built platform using the Gemini API for AI-driven interviews, Multer-based PDF resume analysis, and a real-time Socket.io interview engine.</p>
-            <div class="tag-row">
-              <span class="tag">gemini api</span><span class="tag">socket.io</span><span class="tag">node</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="ai">
-            <div class="project-card-head">
-              <span class="folder-icon">▸</span>
-              <h3>Medical RAG System</h3>
-            </div>
-            <p class="project-desc">Retrieval-Augmented Generation system using LangChain, Google Gemini API, HuggingFace sentence-transformers, and FAISS for medical Q&amp;A.</p>
-            <div class="tag-row">
-              <span class="tag">python</span><span class="tag">langchain</span><span class="tag">faiss</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">code ↗</a>
-            </div>
-          </article>
-
-        </div>
-        <p class="empty-state" id="emptyState" hidden>// no projects match this filter</p>
-      </div>
+    <div class="footer-links">
+      <a href="mailto:mehdi035559@gmail.com">email</a>
+      <a href="https://www.linkedin.com/in/mehdi-ali-a33881296/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">github</a>
     </div>
-  </section>
+  </footer>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="pane">
-    <div class="pane-window">
-      <div class="pane-titlebar">
-        <span class="dots" aria-hidden="true"><i class="dot dot-r"></i><i class="dot dot-y"></i><i class="dot dot-g"></i></span>
-        <span class="pane-title">mehdi@portfolio: ~/contact.sh</span>
-      </div>
-      <div class="pane-body">
-        <p class="cmd-line"><span class="prompt-sm">$</span> cat contact.txt</p>
-        <div class="contact-info">
-          <a href="mailto:mehdi035559@gmail.com" class="contact-line"><span class="meta-key">email</span><span class="meta-val">mehdi035559@gmail.com</span></a>
-          <a href="tel:+923127627983" class="contact-line"><span class="meta-key">phone</span><span class="meta-val">+92 312 7627983</span></a>
-          <a href="https://www.linkedin.com/in/mehdi-ali-a33881296/" target="_blank" rel="noopener" class="contact-line"><span class="meta-key">linkedin</span><span class="meta-val">/in/mehdi-ali-a33881296 ↗</span></a>
-          <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener" class="contact-line"><span class="meta-key">github</span><span class="meta-val">/mehdi-dev-code ↗</span></a>
-        </div>
-
-        <p class="cmd-line cmd-line-spaced"><span class="prompt-sm">$</span> ./send-message.sh</p>
-        <form id="contactForm" class="terminal-form" novalidate>
-          <label class="form-row">
-            <span class="form-label">--name</span>
-            <input type="text" id="name" name="name" placeholder="type your name" autocomplete="name">
-          </label>
-          <label class="form-row">
-            <span class="form-label">--email</span>
-            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
-          </label>
-          <label class="form-row form-row-textarea">
-            <span class="form-label">--message</span>
-            <textarea id="message" name="message" rows="4" placeholder="type your message"></textarea>
-          </label>
-          <p class="form-error" id="formError" role="alert" hidden></p>
-          <p class="form-success" id="formSuccess" role="status" hidden>&gt; message queued. I'll get back to you soon.</p>
-          <button type="submit" class="btn btn-primary">./submit</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <span class="dim">mehdi@portfolio</span><span class="dim">:~$</span> <span class="accent">echo</span> "&copy; <span id="year"></span> Mehdi Ali — built with HTML, CSS &amp; vanilla JS"
-  </div>
-  <div class="footer-links">
-    <a href="mailto:mehdi035559@gmail.com">email</a>
-    <a href="https://www.linkedin.com/in/mehdi-ali-a33881296/" target="_blank" rel="noopener">linkedin</a>
-    <a href="https://github.com/mehdi-dev-code" target="_blank" rel="noopener">github</a>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
